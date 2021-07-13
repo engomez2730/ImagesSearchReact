@@ -4,9 +4,11 @@ class Imagen extends React.Component {
 
     constructor(props) {
         super(props);
+        //Seting this.ImageRef as the Ref of the Img
         this.imageRef = React.createRef();
     }
     componentDidMount() {
+        //Rendering the Ref after the component has rendered in the Dom
         console.log(this.imagenRef)
     }
     render() {
