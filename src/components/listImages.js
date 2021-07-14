@@ -8,7 +8,6 @@ const ListImages = (props) => {
     const listaImages = props.imagenes.map(imagen => {
         return <ImagenesComponente key={imagen.id} imagen={imagen} />
     })
-
     return <div className="list-images">{listaImages}</div>
 }
 

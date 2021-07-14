@@ -3,13 +3,8 @@ import axios from 'axios'
 import Search from './Searchcomponent';
 import ListaImages from './listImages';
 
-
-
-
 class App extends React.Component {
-
     state = { imagenes: [] }
-
     verConsola = async (letras) => {
         try {
             //Making API REUEST with Axios
@@ -25,9 +20,7 @@ class App extends React.Component {
             console.log(err)
         }
     }
-
     render() {
-
         //Sending the this.verConsola as props
         return (
             <div className="ui container" style={{ marginTop: "20px" }}>
